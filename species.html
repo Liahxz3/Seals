@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seal Society </title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background-blur"></div>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="bubble b1"></div>
+<div class="bubble b2"></div>
+<div class="bubble b3"></div>
+<div class="bubble b4"></div>
+<header>
+
+<nav>
+
+<div class="logo">
+ Seal Society
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="species.html">Species</a></li>
+</ul>
+
+</nav>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="species.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="species-page">
+
+    <aside class="species-sidebar">
+
+        <h2> Species Explorer</h2>
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search species..."
+        >
+
+        <div class="species-list" id="speciesList">
+
+            <div class="species-item active"
+                 onclick="loadSpecies('harbor')">
+
+                Harbor Seal
+            </div>
+
+            <div class="species-item"
+                 onclick="loadSpecies('grey')">
+
+                Grey Seal
+            </div>
+
+            <div class="species-item"
+                 onclick="loadSpecies('leopard')">
+
+                Leopard Seal
+            </div>
+
+            <div class="species-item"
+                 onclick="loadSpecies('walrus')">
+
+                Walrus
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="species-view">
+
+        <div class="dex-card">
+
+            <img
+            id="speciesImage"
+            src="../assets/harbor-seal.jpg"
+            >
+
+            <div class="species-info">
+
+                <h1 id="speciesName">
+                    Harbor Seal
+                </h1>
+
+                <span class="status" id="speciesStatus">
+                    Least Concern
+                </span>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <strong>Family</strong>
+                        <p id="speciesFamily">
+                            Phocidae
+                        </p>
+                    </div>
+
+                    <div class="fact">
+                        <strong>Length</strong>
+                        <p id="speciesLength">
+                            1.8 m
+                        </p>
+                    </div>
+
+                    <div class="fact">
+                        <strong>Weight</strong>
+                        <p id="speciesWeight">
+                            130 kg
+                        </p>
+                    </div>
+
+                </div>
+
+                <h3>Description</h3>
+
+                <p id="speciesDescription">
+                    Harbor seals are among the most common
+                    pinnipeds and inhabit temperate and Arctic
+                    coastlines across the Northern Hemisphere.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="species.js"></script>
+
+</body>
+</html>
